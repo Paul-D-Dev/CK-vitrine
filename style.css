@@ -332,6 +332,7 @@ header.open {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  background-color: #FFFFFF41;
   color: #FFFFFF;
   font-family: "PT Mono", monospace;
   border: solid rgba(255, 255, 255, 0.6) 3px;
@@ -411,6 +412,9 @@ header.open {
     height: 100vh;
     padding-left: 10%;
   }
+  #home .home__content .home__content__title h1 {
+    font-size: 50px;
+  }
   #home .home__content .home__content__btn {
     width: 400px;
   }
@@ -454,6 +458,9 @@ header.open {
     margin-top: -10%;
     max-width: 610px;
     max-height: 1040px;
+  }
+  #biography .bio__right .bio__img-wrapper img {
+    height: unset;
   }
   #project {
     display: -webkit-box;
