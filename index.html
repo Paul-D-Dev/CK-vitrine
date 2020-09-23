@@ -5,8 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Camille Kraak</title>
 </head>
-<body>
-    <main class="container">
+<body id="body">
         <nav>
             <img src="assets/burger.svg" alt="icon_navigation" id="burger-menu" class="menu">
         </nav>
@@ -36,10 +35,10 @@
                     </li>
                     <li>
                         <div class="header__social">
-                            <a href="#">
+                            <a href="https://www.instagram.com/artisan_tapissier_decorateur/">
                                 <img src="assets/icon_insta.svg" alt="icone instagram">
                             </a>
-                            <a href="#">
+                            <a href="https://www.facebook.com/Artisan-Tapissier-D%C3%A9corateur-Camille-Kraak-100159778503828">
                                 <img src="assets/icon_facebook.svg" alt="icone facebook">
                             </a>
                         </div>
@@ -62,68 +61,57 @@
                     <h3>Tapissière, Artisan, Décoratrice</h3>
                 </div>
 
-                <div class="home__content__btn" >
-                    <button class="caps">me contacter</button>
-                </div>
-            </div>
-            <!-- <div id="content">
-                <svg class="bg">
-                    <rect id="bg" rx="0" ry="0" x="0" y="0" width="596" height="745">
-                    </rect>
-                </svg>
-                <div id="BTN_CONTACT">
-                    <svg class="Rectangle_4">
-                        <rect id="Rectangle_4" rx="0" ry="0" x="0" y="0" width="422" height="56">
-                        </rect>
-                    </svg>
-                    <div id="ME_CONTACTER">
-                        <span>ME CONTACTER</span>
+                <a href="" class="btn">
+                    <div class="home__content__btn" >
+                        <span class="caps">me contacter</span>
                     </div>
-                </div>
-                <div id="Camille_Kraak">
-                    <span>Camille Kraak</span>
-                </div>
-                <div id="Tapissire__Artisan__Dcoratrice">
-                    <span>Tapissière | Artisan | Décoratrice</span>
-                </div>
-            </div> -->
+                </a>
+            </div>
+
         </section>
-        <!-- <section id="biography">
-            <svg class="Rectangle_5">
-                <rect id="Rectangle_5" rx="0" ry="0" x="0" y="0" width="1920" height="1080">
-                </rect>
-            </svg>
-            <div id="Title">
+
+        <section id="biography">
+            <div class="bio__title">
                 <span>BIOGRAPHIE</span>
             </div>
-            <img id="img-bobine" src="img-bobine.png" srcset="img-bobine.png 1x, img-bobine@2x.png 2x">
-            <div id="Titre">
-                <span>« </span><span style="font-size:72px;">U</span><span>n métier qui me permet <br/>d’exprimer ma créativité … »</span>
-            </div>
-            <div id="Desc">
-                <span>Jelly-o chupa chups gummies <br/>candy canes tiramisu sweet. Cake <br/>jujubes sugar plum chupa chups <br/>chupa chups marzipan tootsie roll. <br/>Oat cake chupa chups muffin muffin <br/>icing chupa chups gummi bears </span>
-            </div>
-        </section>
-        <section id="preject">
-            <svg class="Rectangle_6">
-                <rect id="Rectangle_6" rx="0" ry="0" x="0" y="0" width="1920" height="1080">
-                </rect>
-            </svg>
-            <div id="Title_">
-                <span>PROJETS</span>
-            </div>
-            <img id="lot_armchairs" src="lot_armchairs.png" srcset="lot_armchairs.png 1x, lot_armchairs@2x.png 2x">
-            <div onclick="application.goToTargetView(event)" id="Voir_mes_projets">
-                <svg class="Trac_2" viewBox="0 0 510.867 110.266">
-                    <path id="Trac_2" d="M 0 0 L 510.8669738769531 0 L 510.8669738769531 110.265625 L 0 110.265625 L 0 0 Z">
-                    </path>
-                </svg>
-                <div id="Voir_mes_projets_">
-                    <span>Voir mes projets.</span>
+
+            <div class="bio__right">
+
+                <div class="bio__content">
+                    <div class="bio__content__title">
+                        <span class="bold">« </span><span style="font-size:48px;">U</span><span class="bold">n métier qui me permet <br><span>d’exprimer ma créativité … »</span></span>
+                    </div>
+                    <div class="bio__content__desc">
+                        <span>Jelly-o chupa chups gummies candy canes tiramisu sweet. Cake jujubes sugar plum chupa chups chupa chups marzipan tootsie roll. Oat cake chupa chups muffin muffin icing chupa chups gummi bears </span>
+                    </div>
+                </div>
+
+                <div class="bio__img-wrapper">
+                    <img src="assets/d-img-bobine.png" alt="Images de bobines">
                 </div>
             </div>
+            
         </section>
-        <section id="form">
+
+        <section id="project">
+            <div class="pj__title">
+                <span>PROJETS</span>
+            </div>
+
+            <div class="pj__click">
+
+                <a href class="pj__btn btn">
+                    Voir mes projets
+                </a>
+                
+                <img src="assets/lot_armchairs.jpg">
+
+            </div>
+ 
+
+        </section>
+
+        <!-- <section id="form">
             <svg class="bg_">
                 <rect id="bg_" rx="0" ry="0" x="0" y="0" width="1920" height="1080">
                 </rect>
@@ -212,74 +200,19 @@
                     </svg>
                 </div>
             </div>
-        </section>
-        <div id="created">
-            <span>Design, develop by Dao code</span>
+        </section> -->
+
+        
+        <footer id="footer">
+
+            <ul>
+                <li>Mentions légales</li>
+                <li>Design, develop by dao code</li>
+            </ul>
+
+
+        </footer>
         </div>
-        <div id="sidebar_nav" class="sidebar_nav">
-            <div id="Navbar">
-                <svg class="Nav_-_BG" viewBox="0 0 1080 307.255">
-                    <path id="Nav_-_BG" d="M 0 0 L 1080 0 L 1080 307.2550048828125 L 0 307.2550048828125 L 0 0 Z">
-                    </path>
-                </svg>
-                <div id="Camille_Kraak_b">
-                    <span>Camille Kraak</span>
-                </div>
-                <div id="Menu">
-                    <svg class="Trac_1" viewBox="0 0 88.385 6">
-                        <path id="Trac_1" d="M 0 0 L 88.38494873046875 0">
-                        </path>
-                    </svg>
-                    <div id="ACCUEIL">
-                        <span>ACCUEIL</span>
-                    </div>
-                    <div id="CONTACT">
-                        <span>CONTACT</span>
-                    </div>
-                    <div id="GALLERY">
-                        <span>GALLERY</span>
-                    </div>
-                    <div id="BIOGRAPHIE">
-                        <span>BIOGRAPHIE</span>
-                    </div>
-                </div>
-                <div id="reseaux">
-                    <div id="instagram_black">
-                        <svg class="Trac_4" viewBox="0 0 35 35">
-                            <path id="Trac_4" d="M 5.126953125 35 L 29.873046875 35 C 32.70008087158203 35 35 32.70008087158203 35 29.873046875 L 35 5.126953125 C 35 2.299919128417969 32.70008087158203 0 29.873046875 0 L 5.126953125 0 C 2.299919128417969 0 0 2.299919128417969 0 5.126953125 L 0 29.873046875 C 0 32.70008087158203 2.299919128417969 35 5.126953125 35 Z M 2.05078125 5.126953125 C 2.05078125 3.4307861328125 3.4307861328125 2.05078125 5.126953125 2.05078125 L 29.873046875 2.05078125 C 31.5692138671875 2.05078125 32.94921875 3.4307861328125 32.94921875 5.126953125 L 32.94921875 29.873046875 C 32.94921875 31.5692138671875 31.5692138671875 32.94921875 29.873046875 32.94921875 L 5.126953125 32.94921875 C 3.4307861328125 32.94921875 2.05078125 31.5692138671875 2.05078125 29.873046875 L 2.05078125 5.126953125 Z M 2.05078125 5.126953125">
-                            </path>
-                        </svg>
-                        <svg class="Trac_5" viewBox="255.234 255.234 17.63 17.63">
-                            <path id="Trac_5" d="M 264.04931640625 272.8642578125 C 268.9097595214844 272.8642578125 272.8642578125 268.9097595214844 272.8642578125 264.04931640625 C 272.8642578125 259.1888427734375 268.9097595214844 255.234375 264.04931640625 255.234375 C 259.1888427734375 255.234375 255.234375 259.1888427734375 255.234375 264.04931640625 C 255.234375 268.9097595214844 259.1888427734375 272.8642578125 264.04931640625 272.8642578125 Z M 264.04931640625 257.1932373046875 C 267.829833984375 257.1932373046875 270.9053649902344 260.2687683105469 270.9053649902344 264.04931640625 C 270.9053649902344 267.829833984375 267.829833984375 270.9053649902344 264.04931640625 270.9053649902344 C 260.2687683105469 270.9053649902344 257.1932373046875 267.829833984375 257.1932373046875 264.04931640625 C 257.1932373046875 260.2687683105469 260.2687683105469 257.1932373046875 264.04931640625 257.1932373046875 Z M 264.04931640625 257.1932373046875">
-                            </path>
-                        </svg>
-                        <svg class="Trac_6" viewBox="761.484 128.672 6.46 6.46">
-                            <path id="Trac_6" d="M 764.71435546875 135.1318359375 C 766.495361328125 135.1318359375 767.9443359375 133.6828308105469 767.9443359375 131.90185546875 C 767.9443359375 130.1208801269531 766.495361328125 128.671875 764.71435546875 128.671875 C 762.933349609375 128.671875 761.484375 130.1208801269531 761.484375 131.90185546875 C 761.484375 133.6828308105469 762.933349609375 135.1318359375 764.71435546875 135.1318359375 Z M 764.71435546875 130.8251953125 C 765.3079223632812 130.8251953125 765.791015625 131.3082885742188 765.791015625 131.90185546875 C 765.791015625 132.4954223632812 765.3079223632812 132.978515625 764.71435546875 132.978515625 C 764.1207885742188 132.978515625 763.6376953125 132.4954223632812 763.6376953125 131.90185546875 C 763.6376953125 131.3082885742188 764.1207885742188 130.8251953125 764.71435546875 130.8251953125 Z M 764.71435546875 130.8251953125">
-                            </path>
-                        </svg>
-                    </div>
-                    <svg class="facebook_black" viewBox="0 0 35 35">
-                        <path id="facebook_black" d="M 5.126953125 35 L 16.54296875 35 L 16.54296875 22.55859375 L 12.44140625 22.55859375 L 12.44140625 18.45703125 L 16.54296875 18.45703125 L 16.54296875 13.330078125 C 16.54296875 10.50304412841797 18.84288787841797 8.203125 21.669921875 8.203125 L 26.796875 8.203125 L 26.796875 12.3046875 L 22.6953125 12.3046875 C 21.56444549560547 12.3046875 20.64453125 13.22460174560547 20.64453125 14.35546875 L 20.64453125 18.45703125 L 26.61182403564453 18.45703125 L 25.92823028564453 22.55859375 L 20.64453125 22.55859375 L 20.64453125 35 L 29.87304878234863 35 C 32.70008087158203 35 35 32.70008087158203 35 29.87304878234863 L 35 5.126953125 C 35 2.299919128417969 32.70008087158203 0 29.87304878234863 0 L 5.126953125 0 C 2.299919128417969 0 0 2.299919128417969 0 5.126953125 L 0 29.87304878234863 C 0 32.70008087158203 2.299919128417969 35 5.126953125 35 Z M 2.05078125 5.126953125 C 2.05078125 3.4307861328125 3.4307861328125 2.05078125 5.126953125 2.05078125 L 29.87304878234863 2.05078125 C 31.56921195983887 2.05078125 32.94921875 3.4307861328125 32.94921875 5.126953125 L 32.94921875 29.87304878234863 C 32.94921875 31.56921195983887 31.56921195983887 32.94921875 29.87304878234863 32.94921875 L 22.6953125 32.94921875 L 22.6953125 24.609375 L 27.66551971435547 24.609375 L 29.03270721435547 16.40625 L 22.6953125 16.40625 L 22.6953125 14.35546875 L 28.84765625 14.35546875 L 28.84765625 6.15234375 L 21.669921875 6.15234375 C 17.71202087402344 6.15234375 14.4921875 9.372177124023438 14.4921875 13.330078125 L 14.4921875 16.40625 L 10.390625 16.40625 L 10.390625 24.609375 L 14.4921875 24.609375 L 14.4921875 32.94921875 L 5.126953125 32.94921875 C 3.4307861328125 32.94921875 2.05078125 31.56921195983887 2.05078125 29.87304878234863 L 2.05078125 5.126953125 Z M 2.05078125 5.126953125">
-                        </path>
-                    </svg>
-                </div>
-            </div>
-            <div id="burger">
-                <svg class="Ligne_4" viewBox="0 0 55 4">
-                    <path id="Ligne_4" d="M 0 0 L 55 0">
-                    </path>
-                </svg>
-                <svg class="Ligne_5" viewBox="0 0 55 4">
-                    <path id="Ligne_5" d="M 0 0 L 55 0">
-                    </path>
-                </svg>
-                <svg class="Ligne_6" viewBox="0 0 55 4">
-                    <path id="Ligne_6" d="M 0 0 L 55 0">
-                    </path>
-                </svg>
-            </div>
-        </div> -->
-    </main>
 
     <script src="app.js"></script>
 </body>
