@@ -10,7 +10,8 @@ burgerBtn.addEventListener('click', () => {
 
 
 // handle active in header
-const links = document.getElementsByClassName('link');
+const links = document.querySelectorAll('.link')
+
 
 function removeActive() {
     const current = document.getElementsByClassName('active');
@@ -32,4 +33,27 @@ author[0].addEventListener('click', () => {
         removeActive();
         links[0].classList.add('active');
     }
+})
+
+
+// change link active when user scrool
+let sections = document.querySelectorAll("section");
+
+window.addEventListener('scroll', () => {
+    // Get the position of the window in the top
+    let fromTop = window.scrollY;
+
+    links.forEach(link => {
+        // Get the hash from link #home, #biography, ...)
+        let section = document.querySelector(link.hash);
+        console.log(section, section.offsetTop, section.offsetHeight)
+        if (
+            section.offsetTop <= fromTop &&
+            section.offsetTop + section.offsetHeight > fromTop
+        ) {
+            link.classList.add("active");
+        } else {
+            link.classList.remove("active");
+        }
+    })
 })
