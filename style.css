@@ -183,7 +183,12 @@ header.open {
   margin-right: 20px;
 }
 
-.header__social a img:hover {
+.header__social svg path {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.header__social svg:hover path {
   fill: #788B8B;
 }
 
