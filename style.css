@@ -192,11 +192,7 @@ header.open {
   transition: color .3s ease-in-out;
 }
 
-.link:hover {
-  color: #788B8B;
-}
-
-.link.active {
+.link.active, .link:hover {
   color: #788B8B;
 }
 
