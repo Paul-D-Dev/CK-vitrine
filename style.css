@@ -173,10 +173,6 @@ header.open {
   margin-left: -10%;
 }
 
-a.active {
-  text-decoration: underline;
-}
-
 .header__social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,6 +181,23 @@ a.active {
 
 .header__social a:first-of-type {
   margin-right: 20px;
+}
+
+.header__social a img:hover {
+  fill: #788B8B;
+}
+
+.link {
+  -webkit-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+
+.link:hover {
+  color: #788B8B;
+}
+
+.link.active {
+  color: #788B8B;
 }
 
 /* Home */
@@ -227,7 +240,7 @@ a.active {
 }
 
 .home__content__btn {
-  background: #FFFFFF41;
+  background-color: #FFFFFF41;
   width: 190px;
   height: 45px;
   display: -webkit-box;
@@ -236,6 +249,12 @@ a.active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+
+.home__content__btn:hover {
+  background-color: #FFFFFF60;
 }
 
 .home__content__btn span {
@@ -316,6 +335,12 @@ a.active {
   color: #FFFFFF;
   font-family: "PT Mono", monospace;
   border: solid rgba(255, 255, 255, 0.6) 3px;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#project .pj__click .pj__btn:hover {
+  background-color: #FFFFFF60;
 }
 
 #project .pj__click img {
@@ -327,8 +352,17 @@ a.active {
 #footer {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+#footer ul li a {
   font-family: "Playfair Display", serif;
   color: #788B8B;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+#footer ul li a:hover {
+  color: #5F7171;
 }
 
 @media only screen and (min-width: 768px) {
